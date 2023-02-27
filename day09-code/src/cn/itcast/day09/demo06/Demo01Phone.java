@@ -13,6 +13,12 @@ public class Demo01Phone {
         newPhone.call();
         newPhone.send();
         newPhone.show();
+        System.out.println("==========");
+
+        Phone Phone2 = new NewPhone();
+        newPhone.call();
+        newPhone.send();
+        newPhone.show();
     }
 
 }

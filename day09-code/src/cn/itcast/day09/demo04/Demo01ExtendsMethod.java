@@ -25,6 +25,12 @@ public class Demo01ExtendsMethod {
 
         // 创建的是new了子类对象，所以优先用子类方法
         zi.method();
+
+        Fu fu = new Zi();
+        fu.methodFu(); //用父類方法
+        fu.method(); //因為子類override該方法所以用子類方法
+        //fu.methodZi(); 是父類，所以不能用子類方法
+        System.out.println(fu.num);//用父類的變數
     }
 
 }

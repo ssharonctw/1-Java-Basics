@@ -13,6 +13,10 @@ public class Demo01Constructor {
 
     public static void main(String[] args) {
         Zi zi = new Zi();
+        System.out.println("=========");
+        Fu fu = new Fu();
+        System.out.println("=========");
+        Fu fu_zi = new Zi();
     }
 
 }

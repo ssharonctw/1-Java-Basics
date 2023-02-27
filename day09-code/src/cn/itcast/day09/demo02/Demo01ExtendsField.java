@@ -30,6 +30,11 @@ public class Demo01ExtendsField {
         zi.methodZi(); // 200
         // 这个方法是在父类当中定义的，
         zi.methodFu(); // 100
+
+
+        Fu fu2 = new Zi();
+        // 等号左边是谁，就优先用谁 (Fu)
+        System.out.println(fu2.num);
     }
 
 }

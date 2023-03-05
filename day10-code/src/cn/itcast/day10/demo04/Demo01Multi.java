@@ -15,7 +15,12 @@ public class Demo01Multi {
         // 左侧父类的引用，指向了右侧子类的对象
         Fu obj = new Zi();
 
-        obj.method();
-        obj.methodFu();
+        //直接通過var 訪問member method則看=右邊是誰，沒有則往上找父類的method
+        obj.method(); //子類有override ，所以優先用子類method
+        obj.methodFu(); //子類無ovveride，所以向上找，用父類的method
+        //直接通過var 訪問member variable則看=左邊是誰
+        System.out.println(obj.ch); //父
+        //間接透過member function訪問member variable則看方法屬於誰，便用誰的Var
+        obj.methodChar(); //子
     }
 }

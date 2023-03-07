@@ -1,5 +1,8 @@
 package cn.itcast.day11.demo02;
 
+import cn.itcast.day11.demo02.sub.MySon;
+import cn.itcast.day11.demo02.sub.Stranger;
+
 /*
 Java中有四种权限修饰符：
                     public  >   protected   >   (default)   >   private
@@ -11,4 +14,10 @@ Java中有四种权限修饰符：
 注意事项：(default)并不是关键字“default”，而是根本不写。
  */
 public class Demo01Main {
+    public static void main(String[] args) {
+        new MyClass().method();
+        new MyAnother().anotherMethod();
+        new MySon().sonMethod();
+        new Stranger().strangerMethod();
+    }
 }
